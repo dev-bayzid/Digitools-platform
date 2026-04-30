@@ -1,6 +1,7 @@
 import "./App.css";
 import BannerCart from "./components/BannerCart/BannerCart";
 import BannerInfo from "./components/BannerInfo/BannerInfo";
+import Footer from "./components/Footer/Footer";
 
 import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
@@ -17,6 +18,7 @@ function App() {
       <PricingTools></PricingTools>
       <BannerCart></BannerCart>
       <SubscriptionPrice></SubscriptionPrice>
+      <Footer></Footer>
       
     </>
   );

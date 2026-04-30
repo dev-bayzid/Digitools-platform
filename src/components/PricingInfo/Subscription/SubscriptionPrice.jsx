@@ -15,7 +15,7 @@ const SubscriptionPrice = () => {
             <div className="">
               <h2 className="text-3xl font-bold">Starter</h2>
               <p>Perfect for getting started</p>
-              <span className="text-xl">$0/month</span>
+              <p className="text-3xl font-bold">$0 <span className="font-light text-[15px]">/month</span></p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -103,7 +103,7 @@ const SubscriptionPrice = () => {
             <div className="">
               <h2 className="text-3xl font-bold">Pro</h2>
               <p>Best for professionals</p>
-              <span className="text-xl">$29/month</span>
+              <p className="text-3xl font-bold">$29 <span className="font-light text-[15px]">/month</span></p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -223,7 +223,7 @@ const SubscriptionPrice = () => {
             <div className="">
               <h2 className="text-3xl font-bold">Enterprise</h2>
               <p>For teams and businesses</p>
-              <span className="text-xl">$99/month</span>
+              <p className="text-3xl font-bold">$99 <span className="font-light text-[15px]">/month</span></p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
