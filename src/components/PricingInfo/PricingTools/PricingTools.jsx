@@ -26,7 +26,7 @@ const PricingTools = () => {
         </div>
       </div>
 
-      <PricingCard pricingPromise={pricingPromise}></PricingCard>
+      <PricingCard key={pricingPromise.id} pricingPromise={pricingPromise}></PricingCard>
     </div>
   );
 };

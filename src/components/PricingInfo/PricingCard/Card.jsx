@@ -1,5 +1,5 @@
 const Card = ({ price }) => {
-  console.log(price);
+  // console.log(price);
   const { name, tag, description, features, img, period } = price;
   return (
     <div className="card w-96 bg-base-100 shadow-sm">

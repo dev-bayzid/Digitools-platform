@@ -5,6 +5,7 @@ import BannerInfo from "./components/BannerInfo/BannerInfo";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import PricingTools from "./components/PricingInfo/PricingTools/PricingTools";
+import SubscriptionPrice from "./components/PricingInfo/Subscription/SubscriptionPrice";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <BannerInfo></BannerInfo>
       <PricingTools></PricingTools>
       <BannerCart></BannerCart>
+      <SubscriptionPrice></SubscriptionPrice>
       
     </>
   );
