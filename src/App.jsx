@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import BannerCart from "./components/BannerCart/BannerCart";
 import BannerInfo from "./components/BannerInfo/BannerInfo";
@@ -8,18 +9,18 @@ import Navbar from "./components/Navbar/Navbar";
 import PricingTools from "./components/PricingInfo/PricingTools/PricingTools";
 import SubscriptionPrice from "./components/PricingInfo/Subscription/SubscriptionPrice";
 
-
 function App() {
+
+  const [carts, setCarts] = useState([])
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <HeroSection></HeroSection>
       <BannerInfo></BannerInfo>
-      <PricingTools></PricingTools>
+      <PricingTools setCarts={setCarts} carts={carts}></PricingTools>
       <BannerCart></BannerCart>
       <SubscriptionPrice></SubscriptionPrice>
       <Footer></Footer>
-      
     </>
   );
 }
