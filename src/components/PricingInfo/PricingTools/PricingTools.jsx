@@ -8,6 +8,7 @@ const pricingPromise = fetch("/public/toolsData.json").then((res) =>
 
 const PricingTools = ({setCarts, carts}) => {
   const [selectedType, setSelectedType] = useState("products");
+  const [selectedCard, setSelectedCard] = useState([]);
 
   return (
     <div>
@@ -31,7 +32,7 @@ const PricingTools = ({setCarts, carts}) => {
             onClick={() => setSelectedType("cart")}
             className={`rounded-full py-2 flex-1 ${selectedType === "cart" ? "btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6]" : " "} `}
           >
-            Cart (2)
+            Cart({selectedCard.length})
           </button>
         </div>
       </div>
@@ -42,9 +43,11 @@ const PricingTools = ({setCarts, carts}) => {
           pricingPromise={pricingPromise}
           setCarts={setCarts}
           carts={carts}
+          selectedCard={selectedCard}
+          setSelectedCard={setSelectedCard}
         ></PricingCard>
       ) : (
-        <Cart></Cart>
+        <Cart selectedCard={selectedCard} setSelectedCard={setSelectedCard}></Cart>
       )}
     </div>
   );

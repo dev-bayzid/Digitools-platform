@@ -1,7 +1,13 @@
 import { use } from "react";
 import Card from "./Card";
 
-const PricingCard = ({ pricingPromise, setCarts, carts }) => {
+const PricingCard = ({
+  pricingPromise,
+  setCarts,
+  carts,
+  selectedCard,
+  setSelectedCard,
+}) => {
   const pricing = use(pricingPromise);
   // console.log(pricing);
   return (
@@ -12,6 +18,8 @@ const PricingCard = ({ pricingPromise, setCarts, carts }) => {
           setCarts={setCarts}
           carts={carts}
           price={price}
+          selectedCard={selectedCard}
+          setSelectedCard={setSelectedCard}
         ></Card>
       ))}
     </div>

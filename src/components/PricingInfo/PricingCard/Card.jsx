@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Card = ({ price, setCarts, carts }) => {
+const Card = ({ price, setCarts, carts,setSelectedCard, selectedCard }) => {
   console.log(price);
   const { name, tag, description, features, img, period, tagType } = price;
 
@@ -26,6 +26,8 @@ const Card = ({ price, setCarts, carts }) => {
     }
     
     setIsSelected(true);
+
+    setSelectedCard([...selectedCard,price])
     setCarts([...carts, price]);
   };
 
