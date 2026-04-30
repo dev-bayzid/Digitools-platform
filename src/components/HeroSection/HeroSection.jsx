@@ -1,8 +1,9 @@
+import { Play } from "lucide-react";
 import bannerImg from "../../assets/banner.png";
 
 const HeroSection = () => {
   return (
-    <div className="flex justify-around items-center container mx-auto mt-20">
+    <div className=" lg:flex justify-around items-center container mx-auto mt-20">
       <div className="hero-left space-y-4">
         <h3 className="btn bg-[#B38DFC] rounded-3xl bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent ">
           New: AI-Powered Tools Available
@@ -20,7 +21,10 @@ const HeroSection = () => {
           <button className="btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl">
             Explore Products
           </button>
-          <button className="btn border-2  bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent rounded-3xl">
+          <button className="btn border-[#8533FA]  bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent rounded-3xl">
+            <span className="text-[#8533FA]">
+              <Play></Play>
+            </span>
             Watch Demo
           </button>
         </div>

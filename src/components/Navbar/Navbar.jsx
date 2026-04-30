@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center gap-10 pr-30">
           <button className="px-2">Login</button>
-          <button className="btn btn-primary rounded-3xl">Get Started</button>
+          <button className="btn btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl">Get Started</button>
         </div>
       </div>
     </div>

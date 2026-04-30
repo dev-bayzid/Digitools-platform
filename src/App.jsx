@@ -1,18 +1,15 @@
 import "./App.css";
+import BannerInfo from "./components/BannerInfo/BannerInfo";
+
 import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <header>
-        <Navbar></Navbar>
-      </header>
-
-    <main>
+      <Navbar></Navbar>
       <HeroSection></HeroSection>
-    </main>
-
+      <BannerInfo></BannerInfo>
     </>
   );
 }
