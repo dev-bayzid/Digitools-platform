@@ -2,11 +2,9 @@ import { useState } from "react";
 import PricingCard from "../PricingCard/PricingCard";
 import Cart from "../Cart/Cart";
 
-const pricingPromise = fetch("/public/toolsData.json").then((res) =>
-  res.json(),
-);
+const pricingPromise = fetch("/toolsData.json").then((res) => res.json());
 
-const PricingTools = ({setCarts, carts}) => {
+const PricingTools = ({ setCarts, carts }) => {
   const [selectedType, setSelectedType] = useState("products");
   const [selectedCard, setSelectedCard] = useState([]);
 
@@ -47,7 +45,10 @@ const PricingTools = ({setCarts, carts}) => {
           setSelectedCard={setSelectedCard}
         ></PricingCard>
       ) : (
-        <Cart selectedCard={selectedCard} setSelectedCard={setSelectedCard}></Cart>
+        <Cart
+          selectedCard={selectedCard}
+          setSelectedCard={setSelectedCard}
+        ></Cart>
       )}
     </div>
   );

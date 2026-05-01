@@ -16,7 +16,12 @@ const Cart = ({ selectedCard, setSelectedCard }) => {
 
   const handleCheckOutBtn = () => {
     toast.success(" Order placed successfully! Thank you for your purchase.");
+    setSelectedCard([]);
   };
+
+  const total = selectedCard.reduce((sum, item) => {
+    return sum + Number(item.price);
+  }, 0);
 
   return (
     <div className="card container mx-auto mb-10 w-5xl bg-base-200 shadow-sm mt-6">
@@ -79,7 +84,7 @@ const Cart = ({ selectedCard, setSelectedCard }) => {
           <div>
             <div className="my-5 flex justify-between items-center ">
               <h2 className="text-gray-400">Total:</h2>
-              <h1 className="text-xl font-semibold">$200</h1>
+              <h1 className="text-xl font-semibold">${total}</h1>
             </div>
             <div className="card-actions justify-center">
               <button

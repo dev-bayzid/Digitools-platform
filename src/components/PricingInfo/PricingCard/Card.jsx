@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard }) => {
-  console.log(price);
+const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
+  // console.log(price);
   const { name, tag, description, features, img, period, tagType } = price;
 
   const getTagType = (type) => {
@@ -16,8 +16,8 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard }) => {
   };
 
   const [isSelected, setIsSelected] = useState(false);
-  console.log(price.id);
-  console.log(carts);
+  // console.log(price.id);
+  // console.log(carts);
 
   const handleBuyNowBtn = (price) => {
     const isExist = carts.find((cart) => cart.id === price.id);
@@ -48,7 +48,7 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard }) => {
           <h2 className="text-xl font-bold">{name}</h2>
           <p>{description}</p>
           <p className="text-xl font-bold">
-            {price.price}{" "}
+            ${price.price}
             <span className="text-gray-500 text-[15px]">/{period}</span>
           </p>
         </div>

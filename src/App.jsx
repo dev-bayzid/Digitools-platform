@@ -11,6 +11,7 @@ import SubscriptionPrice from "./components/PricingInfo/Subscription/Subscriptio
 
 function App() {
   const [carts, setCarts] = useState([]);
+
   return (
     <>
       <Navbar carts={carts}></Navbar>

@@ -31,7 +31,7 @@ const Navbar = ({carts}) => {
 
         <div className="flex justify-between items-center gap-10 pr-30">
           <button className="px-2">Login</button>
-          <button className="btn btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl transform transition duration-300 hover:translate-y-2">Get Started</button>
+          <button className="btn btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl transform transition duration-300 hover:translate-y-1">Get Started</button>
         </div>
       </div>
     </div>
