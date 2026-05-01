@@ -11,13 +11,13 @@ const PricingCard = ({
   const pricing = use(pricingPromise);
   // console.log(pricing);
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto mt-6 space-y-4">
-      {pricing.map((price, index) => (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8  mt-6">
+      {pricing.map((priceCard) => (
         <Card
-          key={index}
+          key={priceCard.id}
           setCarts={setCarts}
           carts={carts}
-          price={price}
+          priceCard={priceCard}
           selectedCard={selectedCard}
           setSelectedCard={setSelectedCard}
         ></Card>

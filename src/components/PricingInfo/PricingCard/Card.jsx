@@ -1,9 +1,16 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
+const Card = ({
+  priceCard,
+  setCarts,
+  carts,
+  setSelectedCard,
+  selectedCard,
+}) => {
   // console.log(price);
-  const { name, tag, description, features, img, period, tagType } = price;
+  const { name, tag, description, features, img, period, tagType, price } =
+    priceCard;
 
   const getTagType = (type) => {
     if (type === "warning") {
@@ -19,8 +26,8 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
   // console.log(price.id);
   // console.log(carts);
 
-  const handleBuyNowBtn = (price) => {
-    const isExist = carts.find((cart) => cart.id === price.id);
+  const handleBuyNowBtn = () => {
+    const isExist = carts.find((cart) => cart.id === priceCard.id);
     if (isExist) {
       toast.error("Item is already in Cart");
       return;
@@ -29,12 +36,12 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
     toast.success(`${name} is added to cart`);
     setIsSelected(true);
 
-    setSelectedCard([...selectedCard, price]);
-    setCarts([...carts, price]);
+    setSelectedCard([...selectedCard, priceCard]);
+    setCarts([...carts, priceCard]);
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-2xl">
+    <div className="card w-96 bg-base-100 container mx-auto shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-2xl">
       <div className="card-body">
         <div className="flex justify-between">
           <img src={img} alt="" />
@@ -48,7 +55,7 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
           <h2 className="text-xl font-bold">{name}</h2>
           <p>{description}</p>
           <p className="text-xl font-bold">
-            ${price.price}
+            ${price}
             <span className="text-gray-500 text-[15px]">/{period}</span>
           </p>
         </div>
@@ -75,7 +82,7 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard, }) => {
         </ul>
         <div className="mt-6">
           <button
-            onClick={() => handleBuyNowBtn(price)}
+            onClick={() => handleBuyNowBtn()}
             className={`btn rounded-3xl text-white w-full ${isSelected ? "bg-green-500" : "bg-linear-to-l from-[#9514FA] to-[#4F39F6]"}`}
           >
             {isSelected ? "Added to Cart" : "Buy Now"}

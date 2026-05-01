@@ -8,9 +8,9 @@ const SubscriptionPrice = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto mt-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto mt-20">
         {/* first card */}
-        <div className="card flex w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
+        <div className="card flex container mx-auto w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body flex-1">
             <div className="">
               <h2 className="text-3xl font-bold">Starter</h2>
@@ -97,7 +97,7 @@ const SubscriptionPrice = () => {
           </div>
         </div>
         {/* second card */}
-        <div className="card w-96 transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
+        <div className="card w-96 container mx-auto transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body relative space-y-6 rounded-3xl bg-linear-to-l from-[#9514FA] to-[#4F39F6] text-white">
             <div className="absolute -top-4 right-35 flex justify-center p-2 rounded-3xl border border-[#FEF3C6] bg-[#FEF3C6]">
               <p className="text-center text-[#BB4D00]">Most Popular</p>
@@ -222,7 +222,7 @@ const SubscriptionPrice = () => {
         </div>
 
         {/* third card */}
-        <div className="card w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
+        <div className="card w-96 container mx-auto bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body">
             <div className="">
               <h2 className="text-3xl font-bold">Enterprise</h2>

@@ -1,6 +1,6 @@
 import user from "../../assets/user.png";
-import product from "../../assets/package.png"
-import rocket from "../../assets/rocket.png"
+import product from "../../assets/package.png";
+import rocket from "../../assets/rocket.png";
 
 const BannerCart = () => {
   return (
@@ -12,9 +12,9 @@ const BannerCart = () => {
         </p>
       </div>
       {/* banner cart */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto mt-10">
-        <div className="flex justify-between items-center container mx-auto">
-          <div className="card w-96 bg-base-100 card-xl shadow-sm">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto mt-10">
+        <div className=" justify-between items-center ">
+          <div className="card w-full bg-base-100 card-xl shadow-sm">
             <div className="relative card-body">
               <div className="absolute top-5 right-10 rounded-full text-white w-10 h-10 bg-linear-to-l from-[#9514FA] to-[#4F39F6] flex justify-center items-center">
                 <p className="">01</p>
@@ -30,8 +30,8 @@ const BannerCart = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center container mx-auto">
-          <div className="card w-96 bg-base-100 card-xl shadow-sm">
+        <div className=" justify-between items-center ">
+          <div className="card w-full bg-base-100 card-xl shadow-sm">
             <div className="relative card-body">
               <div className="absolute top-5 right-10 rounded-full text-white w-10 h-10 bg-linear-to-l from-[#9514FA] to-[#4F39F6] flex justify-center items-center">
                 <p className="">02</p>
@@ -48,8 +48,8 @@ const BannerCart = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center container mx-auto">
-          <div className="card w-96 bg-base-100 card-xl shadow-sm">
+        <div className="justify-between items-center ">
+          <div className="card w-full bg-base-100 card-xl shadow-sm">
             <div className="relative card-body">
               <div className="absolute top-5 right-10 rounded-full text-white w-10 h-10 bg-linear-to-l from-[#9514FA] to-[#4F39F6] flex justify-center items-center">
                 <p className="">03</p>
