@@ -4,7 +4,7 @@ import bannerImg from "../../assets/banner.png";
 const HeroSection = () => {
   return (
     <div className=" lg:flex justify-around items-center container mx-auto mt-20">
-      <div className="hero-left space-y-4">
+      <div className="text-center md:hero-left  space-y-4">
         <h3 className="btn bg-[#B38DFC] rounded-3xl bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent ">
           New: AI-Powered Tools Available
         </h3>
