@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
-const Card = ({ price, setCarts, carts,setSelectedCard, selectedCard }) => {
+const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard }) => {
   console.log(price);
   const { name, tag, description, features, img, period, tagType } = price;
 
@@ -16,18 +17,19 @@ const Card = ({ price, setCarts, carts,setSelectedCard, selectedCard }) => {
 
   const [isSelected, setIsSelected] = useState(false);
   console.log(price.id);
-    console.log(carts)
+  console.log(carts);
 
   const handleBuyNowBtn = (price) => {
     const isExist = carts.find((cart) => cart.id === price.id);
     if (isExist) {
-      alert("Item is already in Cart");
+      toast.error("Item is already in Cart");
       return;
     }
-    
+
+    toast.success(`${name} is added to cart`);
     setIsSelected(true);
 
-    setSelectedCard([...selectedCard,price])
+    setSelectedCard([...selectedCard, price]);
     setCarts([...carts, price]);
   };
 
