@@ -10,12 +10,14 @@ const SubscriptionPrice = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto mt-20">
         {/* first card */}
-        <div className="card flex w-96 bg-base-100 shadow-sm">
+        <div className="card flex w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body flex-1">
             <div className="">
               <h2 className="text-3xl font-bold">Starter</h2>
               <p>Perfect for getting started</p>
-              <p className="text-3xl font-bold">$0 <span className="font-light text-[15px]">/month</span></p>
+              <p className="text-3xl font-bold">
+                $0 <span className="font-light text-[15px]">/month</span>
+              </p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -95,15 +97,17 @@ const SubscriptionPrice = () => {
           </div>
         </div>
         {/* second card */}
-        <div className="card w-96 ">
+        <div className="card w-96 transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body relative space-y-6 rounded-3xl bg-linear-to-l from-[#9514FA] to-[#4F39F6] text-white">
             <div className="absolute -top-4 right-35 flex justify-center p-2 rounded-3xl border border-[#FEF3C6] bg-[#FEF3C6]">
-                <p className="text-center text-[#BB4D00]">Most Popular</p>
+              <p className="text-center text-[#BB4D00]">Most Popular</p>
             </div>
             <div className="">
               <h2 className="text-3xl font-bold">Pro</h2>
               <p>Best for professionals</p>
-              <p className="text-3xl font-bold">$29 <span className="font-light text-[15px]">/month</span></p>
+              <p className="text-3xl font-bold">
+                $29 <span className="font-light text-[15px]">/month</span>
+              </p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -218,12 +222,14 @@ const SubscriptionPrice = () => {
         </div>
 
         {/* third card */}
-        <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="card w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-xl">
           <div className="card-body">
             <div className="">
               <h2 className="text-3xl font-bold">Enterprise</h2>
               <p>For teams and businesses</p>
-              <p className="text-3xl font-bold">$99 <span className="font-light text-[15px]">/month</span></p>
+              <p className="text-3xl font-bold">
+                $99 <span className="font-light text-[15px]">/month</span>
+              </p>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -328,8 +334,6 @@ const SubscriptionPrice = () => {
                 </svg>
                 <span>Custom branding</span>
               </li>
-              
-          
             </ul>
             <div className="mt-6">
               <button className="btn bg-linear-to-l text-white from-[#9514FA] to-[#4F39F6] rounded-3xl w-full">
