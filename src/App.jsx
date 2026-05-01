@@ -10,8 +10,7 @@ import PricingTools from "./components/PricingInfo/PricingTools/PricingTools";
 import SubscriptionPrice from "./components/PricingInfo/Subscription/SubscriptionPrice";
 
 function App() {
-
-  const [carts, setCarts] = useState([])
+  const [carts, setCarts] = useState([]);
   return (
     <>
       <Navbar carts={carts}></Navbar>

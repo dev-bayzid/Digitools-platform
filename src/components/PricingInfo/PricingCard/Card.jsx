@@ -34,7 +34,7 @@ const Card = ({ price, setCarts, carts, setSelectedCard, selectedCard }) => {
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-sm">
+    <div className="card w-96 bg-base-100 shadow-sm transform transition duration-300 hover:-translate-y-4 hover:scale-[1.02] hover:shadow-2xl">
       <div className="card-body">
         <div className="flex justify-between">
           <img src={img} alt="" />

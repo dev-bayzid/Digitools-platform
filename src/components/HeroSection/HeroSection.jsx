@@ -18,10 +18,10 @@ const HeroSection = () => {
           Products
         </p>
         <div className="flex justify-start items-center gap-10">
-          <button className="btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl">
+          <button className="btn btn-soft btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl text-white transform transition duration-300 hover:-translate-y-2">
             Explore Products
           </button>
-          <button className="btn border-[#8533FA]  bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent rounded-3xl">
+          <button className="btn btn-primary btn-outline  border-[#8533FA]  bg-linear-to-l from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent rounded-3xl transform transition duration-300 hover:-translate-y-2">
             <span className="text-[#8533FA]">
               <Play></Play>
             </span>

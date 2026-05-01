@@ -1,5 +1,5 @@
 import { ShoppingCart } from "lucide-react";
-// import cart from "../../../assets/products/shopping-cart.png";
+import { toast } from "react-toastify";
 
 const Cart = ({ selectedCard, setSelectedCard }) => {
   console.log(selectedCard);
@@ -9,8 +9,13 @@ const Cart = ({ selectedCard, setSelectedCard }) => {
     const filteredCards = selectedCard.filter(
       (cards) => cards.name !== card.name,
     );
-    console.log(filteredCards);
+    // console.log(filteredCards);
+    toast.info(`${card.name} is removed`);
     setSelectedCard(filteredCards);
+  };
+
+  const handleCheckOutBtn = () => {
+    toast.success(" Order placed successfully! Thank you for your purchase.");
   };
 
   return (
@@ -73,11 +78,14 @@ const Cart = ({ selectedCard, setSelectedCard }) => {
         ) : (
           <div>
             <div className="my-5 flex justify-between items-center ">
-                <h2 className="text-gray-400">Total:</h2>
-                <h1 className="text-xl font-semibold">$200</h1>
+              <h2 className="text-gray-400">Total:</h2>
+              <h1 className="text-xl font-semibold">$200</h1>
             </div>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl w-full">
+              <button
+                onClick={handleCheckOutBtn}
+                className="btn btn-primary bg-linear-to-l from-[#9514FA] to-[#4F39F6] rounded-3xl w-full"
+              >
                 Proceed to Checkout
               </button>
             </div>
