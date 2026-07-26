@@ -9,18 +9,7 @@ A modern and responsive digital tools marketplace built with **React.js**, **Tai
 🔗 **Live Site:** https://digi-tools-online.netlify.app/
 ## 📂 GitHub Repository
 
-🔗 **Repository:** https://github.com/your-username/digi-tools
-
----
-
-## 📸 Preview
-
-> Add a screenshot of your application here.
-
-```md
-![DigiTools Preview](./public/preview.png)
-```
-
+🔗 **Repository:** https://github.com/dev-bayzid/Digitools-platform
 ---
 
 # ✨ Features
@@ -106,48 +95,14 @@ Toast notifications for:
 
 ---
 
-# 📁 Folder Structure
-
-```
-src
-│
-├── assets
-├── components
-├── data
-├── pages
-├── App.jsx
-├── main.jsx
-└── index.css
-```
-
----
 
 # 🚀 Getting Started
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/digi-tools.git
+git clone https://github.com/dev-bayzid/Digitools-platform
 ```
-
-### Navigate to the project folder
-
-```bash
-cd digi-tools
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
 ---
 
 # 📦 NPM Packages
@@ -172,11 +127,13 @@ npm run dev
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Bayzid Hasan**
 
-GitHub: https://github.com/dev-bayzid
+- 🌐 Portfolio: https://bayzid-dev.vercel.app
+- GitHub: https://github.com/dev-bayzid
+- LinkedIn: https://www.linkedin.com/in/bayzid-hasan-dev
 
 ---
 
